@@ -1,0 +1,99 @@
+{
+  "name": "BamAccounts1Test",
+  "idInjection": true,
+  "options": {
+    "idInjection": false,
+    "dashdb": {
+      "schema": "DASH107047",
+      "table": "BAM_ACCOUNTS1_TEST"
+    }
+  },
+  "properties": {
+    "email": {
+      "type": "string",
+      "required": false,
+      "length": 100,
+      "scale": 0,
+      "dashdb": {
+        "columnName": "EMAIL",
+        "dataType": "VARCHAR",
+        "dataLength": 100,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    },
+    "firstname": {
+      "type": "string",
+      "required": false,
+      "length": 30,
+      "scale": 0,
+      "dashdb": {
+        "columnName": "FIRSTNAME",
+        "dataType": "VARCHAR",
+        "dataLength": 30,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    },
+    "lastname": {
+      "type": "string",
+      "required": false,
+      "length": 30,
+      "scale": 0,
+      "dashdb": {
+        "columnName": "LASTNAME",
+        "dataType": "VARCHAR",
+        "dataLength": 30,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    },
+    "username": {
+      "type": "string",
+      "required": false,
+      "length": 30,
+      "scale": 0,
+      "dashdb": {
+        "columnName": "USERNAME",
+        "dataType": "VARCHAR",
+        "dataLength": 30,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    },
+    "account": {
+      "type": "string",
+      "id": false,
+      "required": true,
+      "length": 4,
+      "scale": 0,
+      "dashdb": {
+        "columnName": "ACCOUNT",
+        "dataType": "INTEGER",
+        "dataLength": 4,
+        "dataScale": 0,
+        "nullable": "N"
+      }
+    },
+    "bamKeyId": {
+      "type": "string",
+      "id": true,
+      "required": false,
+      "index": false,
+      "description": "",
+      "length": 10,
+      "scale": 0,
+      "dashdb": {
+        "columnName": "BAM_KEY_ID",
+        "dataType": "VARCHAR",
+        "dataLength": 10,
+        "dataScale": 0,
+        "nullable": "Y"
+      }
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
